@@ -1,0 +1,60 @@
+.FieldLayout {
+    width: 90% !important;
+    height: 90% !important;
+    background-color: transparent;
+    border: 1px dashed var(--gray);
+    border-radius: 4px;
+    align-items: center;
+    gap: 15px;
+}
+.FieldLayoutcust{
+  width: 90% !important;
+  background-color: transparent;
+  border: 1px dashed var(--gray);
+  border-radius: 4px;
+  align-items: center;
+  gap: 15px;
+}
+.panel {
+    width: 70px;
+    height: 50px;
+    background-color: #1e88e5;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    overflow: hidden;
+  }
+.panel.detected{
+  background-color:  #9ce51e;
+
+}
+.panel.fault{
+  background-color: #e51e1e;
+}
+  /* Thin horizontal and vertical lines */
+  .panel::before,
+  .panel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      linear-gradient(transparent 85%, rgba(255, 255, 255, 0.15) 85%), /* Horizontal */
+      linear-gradient(90deg, transparent 85%, rgba(255, 255, 255, 0.15) 85%); /* Vertical */
+    background-size: 10px 10px;
+    pointer-events: none;
+  }
+
+
+.drone{
+  transition: 0.1s all;
+  cursor:pointer;
+}
