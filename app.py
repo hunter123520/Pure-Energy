@@ -11,7 +11,7 @@ import sys
 # # CORS(app, resources={r"/*": {"origins": "https://smart-recycle.onrender.com"}})
 # api = Api(app)
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "https://pure-energy.onrender.com"}})
+# CORS(app, resources={r"/*": {"origins": "https://pure-energy.onrender.com"}})
 api = Api(app)
 
 app.config['CORS_HEADERS'] = 'Content-Type'
