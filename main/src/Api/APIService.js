@@ -2,7 +2,7 @@ export default class APIService {
     // Insert an article
     static recycle(body) {
         // return fetch(`https://recycle-garbage-backend.onrender.com/recycle`, {
-        return fetch(`http://localhost:5000/recycle`, {
+        return fetch(`https://pure-energy.onrender.com/recycle`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -14,7 +14,7 @@ export default class APIService {
     }
     static monitor(body) {
         // return fetch(`https://recycle-garbage-backend.onrender.com/recycle`, {
-        return fetch(`http://localhost:5000/monitor`, {
+        return fetch(`https://pure-energy.onrender.com/monitor`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -25,7 +25,7 @@ export default class APIService {
         .catch(error => console.log(error))
     }
     static chat(body) {
-        return fetch(`https://recycle-garbage-backend.onrender.com/chat`, {
+        return fetch(`https://pure-energy.onrender.com/chat`, {
             'method': 'POST',
             headers: {
                 'Content-Type': 'application/json'
