@@ -6,7 +6,7 @@ import os
 import sys
 
 app = Flask(__name__, static_url_path='', static_folder='main/build')
-# CORS(app, origins=['https://smart-recycle.onrender.com'], methods=['GET', 'POST'], support_credentials=True)#comment this on deployment
+CORS(app, origins=['https://pure-energy.onrender.com'], methods=['GET', 'POST'], support_credentials=True)#comment this on deployment
 # app = Flask(__name__)
 # CORS(app, resources={r"/*": {"origins": "https://smart-recycle.onrender.com"}})
 CORS(app)
